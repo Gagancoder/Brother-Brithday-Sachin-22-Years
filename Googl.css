@@ -1,0 +1,290 @@
+/* BASIC STYLES */
+body {
+background-position: center;
+background-size: cover;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/222/981/89/candles-cake-cake-bokeh-wallpaper-preview.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    width: 100%;
+    
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* NAV BAR */
+  #nav_bar {
+    float: right;
+  }
+  
+  #nav_bar li {
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  #nav_bar #sign_in {
+    background: #ec0d0d; 
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 3px; 
+    font-weight: bold;
+    border-radius: 100px;
+  }
+  
+  .nav-links {
+    color: #ffffff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li.nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  #sign_in:hover { 
+    box-shadow: 1px 1px 5px #999;
+  }
+  
+  #sign_in {
+    color: #fff;
+   
+  }
+  
+  /* GOOGLE AREA */
+  .google{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 132px;
+    padding-bottom: 20px;
+  }
+  
+  .form {
+    
+    text-align: center;
+  }
+  
+  #txtSearch { 
+  
+    border-radius: 100px;
+    width: 450px;
+    line-height: 32px;
+    padding: 20px 10px;
+  }
+  #txtSearch:hover{
+    box-shadow: 1px 1px 5px #999;
+  }
+  .form #txtSearch {
+    margin-left: 20%;
+    padding: 0 8px;
+  }
+  
+  #txtSearch:hover {
+    border-color: #ffffff;
+    padding-top: 0;
+  }
+  
+  .buttons {
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 0px;
+  }
+  
+  /* FOOTER */
+  footer  {
+    background: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+  /*   position: fixed; */
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    height: 50px;
+   margin-top: 15.74%;
+    
+  }
+  
+  footer ul li {
+    display: inline;
+    color: #666666;
+    font-size: 14px;
+    padding: 13px;
+  }
+  
+  footer ul {
+    float: left;
+    padding: 1px;
+  }
+  
+  footer ul a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right {
+    float: right;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media screen and (max-width: 400px) {
+   
+   li.nav-links a {
+      display: none;
+    }
+    
+   #google_logo {
+     padding: 0;
+   }
+    
+   .buttons {
+     display: none;
+   }
+    
+   #form-search {
+     width: 80%;
+  
+   }
+    
+   footer {
+     bottom: 0;
+   }
+    
+   footer ul {
+     float: none;
+     padding-bottom: 2px;
+      
+   }
+    
+   .footer-left {
+     text-align: center;
+     margin: auto; 
+     padding-top: 10px;
+      
+   }
+    
+   .footer-right {
+     float: none;
+     text-align: center;
+     
+   }
+  }
+  
+  @media screen and (max-width: 565px) {
+   
+    li.nav-links a {
+      display: none;
+    }
+    
+    
+   #google_logo {
+     padding: 0;
+   }
+    
+   .buttons {
+     display: none;
+   }
+    
+   #form-search {
+     width: 80%;
+  
+   }
+    
+   footer {
+  /*    bottom: 0;
+     postion: absolute; */
+     position:absolute;
+     bottom:0;
+     width:100%;
+     height:20px;
+   }
+    
+   footer ul {
+     float: none;
+     padding-bottom: 2px;
+      
+   }
+    
+   .footer-left {
+     text-align: center;
+     margin: auto; 
+     padding-top: 10px;
+      
+   }
+    
+   .footer-right {
+     float: none;
+     text-align: center;
+     
+   }
+  }
+  .goog{
+    margin-top: 0;
+    margin-left: 27%;
+    color: rgb(255, 255, 255);
+    font-family: 'Yellowtail', cursive;
+  }
+  .bubbles img{
+
+    animation: bubble 8s linear infinite;
+}
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -70px;
+}
+@keyframes bubble {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    75%{
+       
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width:100px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+    width:150px;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width:500px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+    width:50px;
+}.bubbles img:nth-child(5){
+    animation-delay: 3s;
+    width:100px;
+}
+.bubbles img:nth-child(6){
+    width:120px;
+    animation-delay: 6s;
+}
+.bubbles img:nth-child(7){
+    width:233px;
+    animation-delay: 7s;
+}
